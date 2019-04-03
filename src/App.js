@@ -8,26 +8,24 @@ class App extends Component {
       {
         id: 1,
         title: "hi",
-        comleted: false
+        completed: false
       },
       {
         id: 2,
         title: "hallow",
-        comleted: false
+        completed: false
       },
       {
         id: 3,
         title: "goodbye",
-        comleted: false
+        completed: true
       }
     ]
   };
   render() {
-    console.log(this.state.todos);
-
     return (
       <div className="App">
-        <Todos />
+        <Todos todos={this.state.todos} />
       </div>
     );
   }
